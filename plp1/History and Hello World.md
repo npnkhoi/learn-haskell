@@ -1,4 +1,6 @@
 # Haskell: Getting started
+*Code example: [hello.hs](hello.hs)*
+
 Haskell is a popular functional programming language.
 
 ## History
