@@ -43,7 +43,7 @@ We can do operations on variables by using functions (operators are also functio
 **Haskell has static typing.** A variable is bound to a type since compile time for good.
 
 **Haskell is strongly typed.** Mixed-operations are mostly forbidden. For example, the function/operator `<` only compare two things from the same type (which must belongs to the `Ord` type class). When we want to do operations on mixed types, we have to find functions to convert the types. For instance, we can use `read` to do operations on string and other types:
-```
+```console
 Prelude> read "[1, 2]" ++ [3]
 [1,2,3]
 ```
@@ -54,7 +54,7 @@ Prelude> read "[1, 2]" ++ [3]
 
 ### Discussion
 Expressions in Haskell are lazy -- they are not evaluated until they are needed. For example, the following code is valid because it does not need to calculate `1/0` just yet, until `v` is needed in other expressions.
-```
+```haskell
 v = 1/0
 ```
 I personally wonder if this is helpful. That looks like a bug that is ignored by Haskell, which can make Haskell programs more buggy.

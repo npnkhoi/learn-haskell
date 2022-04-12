@@ -1,6 +1,6 @@
 -- Function to double a number
-double x = x + x
-
+-- It uses currying, and also uses an not-yet-defined function
+double = multiply 2
 -- Function to multiply 2 numbers
 multiply x y = x * y
 
