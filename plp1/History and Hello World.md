@@ -1,7 +1,7 @@
 # Haskell: Getting started
 *Code example: [hello.hs](hello.hs)*
 
-Haskell is a popular functional programming language.
+Haskell is arguably the most popular functional programming language. This page introduces its history and show you how to run a Haskell program on your computer.
 
 ## History
 Around 1980s, researchers were interested in a new concept called functional programming, a programming paradigm where all computations are mathematical evaluations. At that time, Miranda was the dorminant purely functional programming language. But it is a proprietary software. 
@@ -50,6 +50,11 @@ Then compile the file and run like following:
 $ ghc -o hello hello.hs
 $ ./hello
 Hello, World!
+```
+
+Or to run the code on the fly, this is my favorite method:
+```
+runhaskell hello.hs
 ```
 
 ## References

@@ -1,0 +1,11 @@
+# For Markdown
+
+plain ::= w+
+bold ::= **plain**
+italic ::= _plain_
+
+paragraph ::= (plain | bold | italic)+\n
+subsubsec ::= paragraph+
+subsec ::= subsubsec+
+sec ::= subsec+
+doc ::= 
