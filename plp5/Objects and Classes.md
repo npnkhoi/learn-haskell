@@ -1,4 +1,4 @@
-# Object and Classes (WIP)
+# Object and Classes
 
 The closest thing to an object in Haskell is a typeclass. Typeclasses are like Java interfaces -- they ensure a variable have certain properties. Examples are:
 - `Num` typeclass

@@ -11,3 +11,6 @@ In each note, I do attach a link to working code files (`.hs`) so that you can d
 3. [Selection Control Structure](plp3/Selection%20Control%20Structures.md)
 4. [Loops and Subroutines](plp4/Loops%20and%20Subroutines.md)
 5. [Objects and Classes](plp5/Objects%20and%20Classes.md)
+
+## Coding project
+[Markdown-to-Latex converter](pandos/README.md)

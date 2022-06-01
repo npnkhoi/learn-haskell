@@ -14,7 +14,7 @@ splitted = splitBySpace "" "khoi nguyen"
 -- Definition of Quick Sort algorithm
 -- => functions do pattern matching for their parameters
 quickSort [] = []
-quickSort (x:xs) = quickSort [t | t <- xs, t <= x] ++ [x] ++ [t | t <- xs, t > x]
+quickSort (x:xs) = quickSort [t | t <- xs, t <= x] ++ [x] ++ quickSort [t | t <- xs, t > x]
 -- Yes, that's it -- the shortest implementation ever!
 
 main = do

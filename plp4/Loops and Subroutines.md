@@ -26,7 +26,10 @@ result = double 5 -- This will returns 10
 Secondly, Haskell functions use "pattern matching" to match its parameter. You can define the same function multiple times, each with a different pattern of parameters, as long as those patterns are mutually exclusive and collectively exhaustive. Below is a mind-blowing example of how the Quick Sort algorithm can be defined succintly in a Haskell function.
 ```haskell
 quickSort [] = []
-quickSort (x:xs) = quickSort [t | t <- xs, t <= x] ++ [x] ++ [t | t <- xs, t > x]
+quickSort (x:xs) = 
+  quickSort [t | t <- xs, t <= x] 
+  ++ [x] 
+  ++ quickSort [t | t <- xs, t > x]
 ```
 
 ### Misc
