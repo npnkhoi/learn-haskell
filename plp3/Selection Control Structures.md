@@ -25,5 +25,13 @@ y = case x of
 
 As shown above, codeblocks are delimited by keywords like `if`, `then`, `else` and `case`.
 
+### Guards
+In functions, you can do conditional statement with "guards", denoted by the `|` character:
+```haskell
+-- This function returns the maximum of two numbers
+max' a b | a > b = a | otherwise = b
+```
+For more examples, please see [guards.hs](../misc/guards.hs)
+
 ### Notes
 Shortcircuit is always applied. Haskell is lazy.
